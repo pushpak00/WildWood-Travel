@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Yuji+Boku&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
 @import "tailwindcss";
 
 @theme {
     --font-YujiBoku: "Yuji Boku", "serif"; 
     --font-DancingScript:"Dancing Script", "cursive";
+    --font-Knewave: "Knewave", "system-ui";
   }
