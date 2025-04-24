@@ -35,10 +35,55 @@ function Forms() {
                         noValidate
                         autoComplete="off"
                     >
-                        <TextField id="outlined-basic" label="Designation" variant="outlined" size="small"/>
+                        <TextField sx={{
+                            input: {
+                                color: "white",
+
+                            },
+                            '& .MuiInputLabel-root': {
+                                color: 'white',
+                            },
+                            '& .MuiOutlinedInput-input': {
+                                color: 'white',
+                            },
+                            '& .MuiOutlinedInput-root': {
+                                '& fieldset': {
+                                    borderColor: 'white',
+                                },
+                                '&:hover fieldset': {
+                                    borderColor: 'white',
+                                },
+                                '&.Mui-focused fieldset': {
+                                    borderColor: 'white',
+                                },
+
+                            },
+                        }}
+                            id="outlined-basic" label="Destination" variant="outlined" size="small" />
 
 
-                        <FormControl sx={{ m: 1, width: 180}} fullWidth size="small">
+                        <FormControl sx={{ input: {
+                                            color: "white",
+            
+                                        },
+                                        '& .MuiInputLabel-root': {
+                                            color: 'white',
+                                        },
+                                        '& .MuiOutlinedInput-input': {
+                                            color: 'white',
+                                        },
+                                        '& .MuiOutlinedInput-root': {
+                                            '& fieldset': {
+                                                borderColor: 'white',
+                                            },
+                                            '&:hover fieldset': {
+                                                borderColor: 'white',
+                                            },
+                                            '&.Mui-focused fieldset': {
+                                                borderColor: 'white',
+                                            },
+            
+                                        }, m: 1, width: 180 }} fullWidth size="small">
                             <InputLabel id="demo-simple-select-label">Budget Per Person</InputLabel>
                             <Select
 
@@ -58,14 +103,41 @@ function Forms() {
 
 
 
-                        <LocalizationProvider dateAdapter={AdapterDayjs}>
-                            <DemoContainer components={['DatePicker']}>
+                        <LocalizationProvider  dateAdapter={AdapterDayjs}>
+                            <DemoContainer  components={['DatePicker']}>
                                 <DatePicker
+                                    
+                                    
                                     slotProps={{
                                         textField: {
                                             size: "small",
                                             fullWidth: true,
-                                            label: "Date of travel"
+                                            label: "Date of travel",
+                                            sx:{
+                                                '& .MuiInputBase-input': {
+                                                    color: "white",
+                    
+                                                },
+                                                '& .MuiInputLabel-root': {
+                                                    color: 'white',
+                                                },
+                                                // '& .MuiOutlinedInput-input': {
+                                                //     color: 'white',
+                                                // },
+                                                '& .MuiOutlinedInput-root': {
+                                                    
+                                                    '& fieldset': {
+                                                        borderColor: 'white',
+                                                    },
+                                                    '&:hover fieldset': {
+                                                        borderColor: 'white',
+                                                    },
+                                                    '&.Mui-focused fieldset': {
+                                                        borderColor: 'white',
+                                                    },
+                    
+                                                },
+                                            }
 
                                         },
                                     }}

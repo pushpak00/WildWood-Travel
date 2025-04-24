@@ -50,7 +50,7 @@ function Header() {
                         </Menu>
                     
                 </div>
-                <div class="my-7 flex hidden md:block space-x-2">
+                <div class="my-7 flex hidden md:block space-x-4">
                     <input class="h-5 w-24 px-1 border border-amber-500 hover:border rounded-sm" type="text" placeholder="Search" />
                     <span class="cursor-pointer hover:underline">Home</span>
                     <span class="cursor-pointer hover:underline">About</span>
