@@ -8,6 +8,8 @@ import Destination from './components/Destination.jsx'
 import Forms from './components/Forms.jsx'
 import Cards from './components/Cards.jsx'
 import Animation from './components/Animation.jsx'
+import BeachSection from './components/BeachSection.jsx'
+import Footer from './components/Footer.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -17,7 +19,9 @@ createRoot(document.getElementById('root')).render(
     <Forms/>
     <Cards/>
     <Animation/>    
+    <BeachSection/>
     <Destination/>
+    <Footer/>
 
   </StrictMode>,
 )
